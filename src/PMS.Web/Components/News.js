@@ -3,18 +3,16 @@ import googleFinance from 'google-finance';
 import PropTypes from 'prop-types';
 // import Utility from '../../../PMS.Utility/Utility';
 import _ from 'lodash';
-var symbols = '';
 class News extends React.Component{
 
 constructor(props)
 {
     super(props);
-    symbols = this.props.symbols;
 }
 
 componentDidMount()
 {
-    googleFinance.companyNews(symbols)
+    googleFinance.companyNews({symbol: this.props.symbol})
     .then((news)=>{
         if(news!=null)
         {
@@ -25,6 +23,14 @@ componentDidMount()
         
     });
 }
+
+// parseNewsCollections(news)
+// {
+//     if(news!=null)
+//     {
+
+//     }
+// }
 
 render()
 {
