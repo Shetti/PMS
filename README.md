@@ -1,4 +1,7 @@
 # PMS
 Portfolio Management System
 
-Under heavy construction !
+nodejs Server
+React Client
+
+Client connects to Google API for news.
