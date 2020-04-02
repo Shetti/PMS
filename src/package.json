@@ -13,7 +13,7 @@
       "start:dev": "npm install && npm run publish:dev && gulp startServer"
     },
     "dependencies": {
-      "axios": "^0.15.3",
+      "axios": "^0.19.2",
       "babel-polyfill": "^6.16.0",
       "body-parser": "1.15.1",
       "compression": "^1.6.2",
